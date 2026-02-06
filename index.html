@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Connection Request</title>
+    <style>
+        body { background: #0d1117; color: #58a6ff; font-family: 'Courier New', monospace; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .terminal { border: 1px solid #30363d; padding: 20px; border-radius: 8px; background: #161b22; box-shadow: 0 10px 30px rgba(0,0,0,0.5); text-align: center; }
+        .btn { padding: 10px 20px; margin: 10px; cursor: pointer; border: none; border-radius: 5px; font-weight: bold; transition: 0.3s; }
+        .accept { background: #238636; color: white; }
+        .deny { background: #da3633; color: white; position: relative; }
+    </style>
+</head>
+<body>
+    <div class="terminal">
+        <h2>> System: New Connection Found</h2>
+        <p>User <strong>[wan ahmad akmal]</strong> wants to establish a friendship protocol with you.</p>
+        <p>Encryption: 256-bit (High level of chill)</p>
+        <button class="btn accept" onclick="alert('Access Granted! DM me now on tiktok')">ACCEPT</button>
+        <button class="btn deny" onmouseover="moveButton(this)">DENY</button>
+    </div>
+
+    <script>
+        function moveButton(btn) {
+            btn.style.left = Math.random() * 200 + 'px';
+            btn.style.top = Math.random() * 200 + 'px';
+        }
+    </script>
+</body>
+</html>
